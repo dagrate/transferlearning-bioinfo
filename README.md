@@ -20,10 +20,5 @@ Metric displayed is the ROC AUC and the F1 Score Class 1.
 
 
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
 
 More to be uploaded soon.
