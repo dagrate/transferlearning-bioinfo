@@ -11,7 +11,7 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 
 ### Data Set Description
 
-| Data Set                       | **Nbr of samples in minority class** | **Nbr of samples in majority class** | **Class imbalance ratio** |
+| Data Set                       | **Nbr of samples in minority class (N_min)** | **Nbr of samples in majority class (N_maj)** | **Class imbalance ratio (N_min/N_maj)** |
 | :---:                          |     :---:                |    :---:                  |             :---:              |
 | **listgarten_elevation_cd33**      |      2273            |       2800                |       0.468                    |
 | **listgarten_elevation_hmg**       |      52              |       10077               |       0.005                    |
