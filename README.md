@@ -7,7 +7,18 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 
 ------
 
-## Experiments - Preliminary Results
+## Experiments - 
+
+### Data Set Description
+
+| Data Set                       | **Nbr of samples in minority class** | **Nbr of samples in majority class** | **Class imbalance ratio** |
+| :---:                          |     :---:                |    :---:                  |             :---:              |
+| **listgarten_elevation_cd33**      |      2273            |       2800                |       0.468                    |
+| **listgarten_elevation_hmg**       |      52              |       10077               |       0.005                    |
+| **Kleinstiver_5gRNA_wholeDataset** |      54              |       95775               |       0.001                    |
+
+
+### Preliminary Results
 
 Metrics displayed are the ROC AUC and the F1 Score Class 1.
 
