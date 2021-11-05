@@ -35,13 +35,13 @@ Metrics displayed are the ROC AUC and the F1 Score Class 1.
 
 | Data Set                       | **Listgarten_22gRNA** | **listgarten_elevation_cd33** | **listgarten_elevation_hmg** | **listgarten_elevation_guideseq** | **CIRCLE_seq_10gRNA** | **Kleinstiver_5gRNA** | **Seq_offTarget** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|**Listgarten_22gRNA**|.523;.000|.517;.000|.530;.000|.499;.000|.501;.000|.496;.000|.517;.000|
-|**listgarten_elevation_cd33**|.768;.0.001|.879;.768|.626;.015|.620;.004|.753;.051|.634;.002|.707;.082|
-|**listgarten_elevation_hmg**|.531;.000|.476;.000|.589;.000|.735;.000|.606;.000|.508;.036|.536;.000|
-|**listgarten_elevation_guideseq**|.565;.000|.521;.000|.644;.000|.734;.000|.565;.068|.522;.000|.553;.009|
-|**CIRCLE_seq_10gRNA**              |
-|**Kleinstiver_5gRNA**              |0.490;0.000|0.551;0.000|0.595; 0.100|
-|**Seq_offTarget**                  |
+|**Listgarten_22gRNA**|.523; .000|.517; .000|.530; .000|.499; .000|.501; .000|.496; .000|.517; .000|
+|**listgarten_elevation_cd33**|.768; .001|.879; .768|.626; .015|.620; .004|.753; .051|.634; .002|.707; .082|
+|**listgarten_elevation_hmg**|.531; .000|.476; .000|.589; .000|.735; .000|.606; .000|.508; .036|.536; .000|
+|**listgarten_elevation_guideseq**|.565; .000|.521; .000|.644; .000|.734; .000|.565; .068|.522; .000|.553; .009|
+|**CIRCLE_seq_10gRNA**|.706; .000|.623; .000|.575; .000|.944; .126|.883; .449|.645; .000|.761; .177|
+|**Kleinstiver_5gRNA**|.564; .000|.490; .000|.551; .000|.504; .000|.506; .000|.595; .100|.554; .000|
+|**Seq_offTarget**|.521; .000|.556; .000|.552; .000|.588; .046|.658; .130|.567; .000|.894; .434|
 
 Remark: class imbalance on some of the data sets is high. Thus, it impacts strongly the classifier performance.
 
