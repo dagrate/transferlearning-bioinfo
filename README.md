@@ -45,8 +45,17 @@ Metrics displayed are the ROC AUC and the F1 Score Class 1.
 
 Remark: class imbalance on some of the data sets is high. Thus, it impacts strongly the classifier performance.
 
+**Metrics for Random Forest Classifier (without class rebalancing)**
+| Data Set                       | **CIRCLEseq_cd33** | **Listgarten_22gRNA** | **listgarten_elevation_hmg** | **listgarten_elevation_guideseq** | **CIRCLE_seq_10gRNA** | **Kleinstiver_5gRNA** | **Seq_offTarget** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+
 **Metrics for Random Forest Classifier (with class rebalancing, ratio N_min/N_maj:TBD.)**
-**WORK IN PROGRESS**
+**TO BE UPLOADED**
+
+**Metrics for Random Forest Classifier (without class rebalancing)**
+| Data Set                       | **CIRCLEseq_cd33** | **Listgarten_22gRNA** | **listgarten_elevation_hmg** | **listgarten_elevation_guideseq** | **CIRCLE_seq_10gRNA** | **Kleinstiver_5gRNA** | **Seq_offTarget** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+
 | Data Set                       | **listgarten_elevation_cd33** | **listgarten_elevation_hmg** | **Kleinstiver_5gRNA_wholeDataset** |
 | :---:                          |     :---:                     |    :---:                     |             :---:                  |
 | **listgarten_elevation_cd33**      |      0.000; 0.000         |       0.000; 0.000           |       0.000; 0.000                 |
