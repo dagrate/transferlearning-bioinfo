@@ -22,8 +22,21 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 | **SITE_seq_offtarget**        |7371|213966|0.017|
 
 
+### Data Similarity Analysis
 
-### Preliminary Results
+**For cosine distance**
+| Data Set                       | **Listgarten_22gRNA** | **listgarten_elevation_cd33** | **listgarten_elevation_hmg** | **listgarten_elevation_guideseq** | **CIRCLE_seq_10gRNA** | **Kleinstiver_5gRNA** | **Seq_offTarget** |
+|**listgarten_elevation_cd33**  |1.000|
+|**listgarten_elevation_hmg**   ||1.000|
+| **Kleinstiver_5gRNA**         |||1.000|
+| **Listgarten_22gRNA**         ||||1.000|
+| **elevation_guideseq**        |||||1.000|
+| **CIRCLE_seq_10gRNA**         ||||||1.000|
+| **SITE_seq_offtarget**        |||||||1.000|
+
+
+
+### Preliminary Results for AI Classifiers
 
 Metrics displayed are the ROC AUC and the F1 Score Class 1.
 
