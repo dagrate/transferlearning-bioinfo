@@ -30,12 +30,12 @@ Remark: first metric is the distance, second is the std dev.
 
 | Data Set                       | **Listgarten_22gRNA** | **listgarten_elevation_cd33** | **listgarten_elevation_hmg** | **listgarten_elevation_guideseq** | **CIRCLE_seq_10gRNA** | **Kleinstiver_5gRNA** | **Seq_offTarget** |
 |**listgarten_elevation_cd33**  |1.000|0.305;0.0750|0.309;0.0749|0.307;0.0758|**0.313;0.0750**|0.308;0.0760|0.305;0.0725|
-|**listgarten_elevation_hmg**   ||1.000|
-| **Kleinstiver_5gRNA**         |||1.000|
-| **Listgarten_22gRNA**         ||||1.000|
-| **elevation_guideseq**        |||||1.000|
-| **CIRCLE_seq_10gRNA**         ||||||1.000|
-| **SITE_seq_offtarget**        |||||||1.000|
+|**listgarten_elevation_hmg**   ||1.000|||||||
+| **Kleinstiver_5gRNA**         |||1.000||||||
+| **Listgarten_22gRNA**         ||||1.000|||||
+| **elevation_guideseq**        |||||1.000||||
+| **CIRCLE_seq_10gRNA**         ||||||1.000|||
+| **SITE_seq_offtarget**        |||||||1.000||
 
 
 
