@@ -32,7 +32,7 @@ Remark: first metric is the distance, second is the std dev.
 | Data Set                       | **listgarten_elevation_cd33** | **CIRCLE_seq_10gRNA** | **Listgarten_22gRNA** | **listgarten_elevation_hmg** | **listgarten_elevation_guideseq** | **Kleinstiver_5gRNA** | **Seq_offTarget** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |**listgarten_elevation_cd33**|1.000;0.000|0.305;0.0750|0.309;0.0749|0.307;0.0758|**0.313;0.0750**|0.308;0.0760|0.305;0.0725|
-|**CIRCLE_seq_10gRNA**||1.000;0.000||||||
+|**CIRCLE_seq_10gRNA**|0.306;0.0751|1.000;0.000|0.327;0.0682|0.311;0.0813|0.369;0.1429|0.333;0.0752|0.329;0.0858|
 |**Listgarten_22gRNA**|||1.000;0.000|||||
 |**listgarten_elevation_hmg**||||1.000;0.000||||
 |**listgarten_elevation_guideseq**|||||1.000;0.000|||
