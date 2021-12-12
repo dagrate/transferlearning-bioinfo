@@ -34,6 +34,10 @@ Remark: first metric is the distance, second is the std dev.
 |**listgarten_elevation_cd33**|1.000;0.000|0.305;0.0750|0.309;0.0749|0.307;0.0758|**0.313;0.0750**|0.308;0.0760|0.305;0.0725|
 |**CIRCLE_seq_10gRNA**||1.000;0.000||||||
 |**Listgarten_22gRNA**|||1.000;0.000|||||
+|**listgarten_elevation_hmg**||||1.000;0.000||||
+|**listgarten_elevation_guideseq**|||||1.000;0.000|||
+|**Kleinstiver_5gRNA**||||||1.000;0.000||
+|**Seq_offTarget**|||||||1.000;0.000|
 
 
 ### Preliminary Results for AI Classifiers
