@@ -24,10 +24,10 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 
 ### Data Similarity Analysis
 
-**For cosine distance**
-
 Remark: first metric is the distance, second is the std dev.
 
+
+**With cosine distance**
 
 | Data Set                       | **listgarten_elevation_cd33** | **CIRCLE_seq_10gRNA** | **Listgarten_22gRNA** | **listgarten_elevation_hmg** | **listgarten_elevation_guideseq** | **Kleinstiver_5gRNA** | **Seq_offTarget** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -38,6 +38,32 @@ Remark: first metric is the distance, second is the std dev.
 |**listgarten_elevation_guideseq**|0.313;0.0752|**0.368;0.142**|0.337;0.0677|0.340;0.0810|1.000;0.000|0.343;0.0738|0.340;0.0870|
 |**Kleinstiver_5gRNA**|0.308;0.0761|0.333;0.0751|0.340;0.0745|0.324;0.0751|**0.343.0.0739**|1.000;0.000|0.336;0.0743|
 |**Seq_offTarget**|0.306;0.0726|0.329;0.0849|0.325;0.0698|0.325;0.0850|**0.340;0.0867**|0.336;0.0741|1.000;0.000|
+
+
+**With euclidean distance**
+
+| Data Set                       | **listgarten_elevation_cd33** | **CIRCLE_seq_10gRNA** | **Listgarten_22gRNA** | **listgarten_elevation_hmg** | **listgarten_elevation_guideseq** | **Kleinstiver_5gRNA** | **Seq_offTarget** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|**listgarten_elevation_cd33**|1.000;0.000|||||||
+|**CIRCLE_seq_10gRNA**||1.000;0.000||||||
+|**Listgarten_22gRNA**|||1.000;0.000|||||
+|**listgarten_elevation_hmg**||||1.000;0.000||||
+|**listgarten_elevation_guideseq**|||||1.000;0.000|||
+|**Kleinstiver_5gRNA**|0.308;0.0761||||||1.000;0.000||
+|**Seq_offTarget**|1.000;0.000||||||1.000;0.000|
+
+
+**With manahattan distance**
+
+| Data Set                       | **listgarten_elevation_cd33** | **CIRCLE_seq_10gRNA** | **Listgarten_22gRNA** | **listgarten_elevation_hmg** | **listgarten_elevation_guideseq** | **Kleinstiver_5gRNA** | **Seq_offTarget** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|**listgarten_elevation_cd33**|1.000;0.000|||||||
+|**CIRCLE_seq_10gRNA**||1.000;0.000||||||
+|**Listgarten_22gRNA**|||1.000;0.000|||||
+|**listgarten_elevation_hmg**||||1.000;0.000||||
+|**listgarten_elevation_guideseq**|||||1.000;0.000|||
+|**Kleinstiver_5gRNA**|0.308;0.0761||||||1.000;0.000||
+|**Seq_offTarget**|1.000;0.000||||||1.000;0.000|
 
 
 
