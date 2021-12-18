@@ -48,47 +48,9 @@ Remark: first metric is the distance, second is the std dev.
 |**CIRCLE_seq_10gRNA**|6.440;0.3558|1.000;0.000|6.8188;0.3558|6.8188;0.4231|6.5936;0.8479|6.774;0.3954|6.836;0.4774|
 |**Listgarten_22gRNA**|6.448;0.3535|6.8122;0.3558|1.000;0.000|6.8418;0.3736|6.8214;0.3610|6.764;0.3912|6.890;0.3594|
 |**listgarten_elevation_hmg**|6.370;0.3702|6.816;0.4217|6.838;0.3734|1.000;0.000|6.734;0.4130|6.776;0.3769|6.8191;0.455|
-|**listgarten_elevation_guideseq**|||||1.000;0.000|||
-|**Kleinstiver_5gRNA**|0.308;0.0761||||||1.000;0.000||
-|**Seq_offTarget**|1.000;0.000||||||1.000;0.000|
-
-
-listgarten_elevation_guideseq.pkl listgarten_elevation_cd33.pkl
-6.474091251424736 0.3662000385386231
-listgarten_elevation_guideseq.pkl CIRCLE_seq_10gRNA_wholeDataset.csv
-6.601119375989717 0.8409417244572454
-listgarten_elevation_guideseq.pkl Listgarten_22gRNA_wholeDataset.csv
-6.82207922391203 0.36154538120108365
-listgarten_elevation_guideseq.pkl listgarten_elevation_hmg.pkl
-6.729256536895531 0.4141816758968947
-listgarten_elevation_guideseq.pkl Kleinstiver_5gRNA_wholeDataset.csv
-6.7868197646274675 0.3952688736315432
-listgarten_elevation_guideseq.pkl SITE-Seq_offTarget_wholeDataset.csv
-6.848670037205991 0.47941497836100944
-Kleinstiver_5gRNA_wholeDataset.csv listgarten_elevation_cd33.pkl
-6.445035047423289 0.3612246357676334
-Kleinstiver_5gRNA_wholeDataset.csv CIRCLE_seq_10gRNA_wholeDataset.csv
-6.777157279543517 0.39529635506833394
-Kleinstiver_5gRNA_wholeDataset.csv Listgarten_22gRNA_wholeDataset.csv
-6.760747346707454 0.3900452717161189
-Kleinstiver_5gRNA_wholeDataset.csv listgarten_elevation_hmg.pkl
-6.77840893973351 0.37556922895894884
-Kleinstiver_5gRNA_wholeDataset.csv listgarten_elevation_guideseq.pkl
-6.785549874507246 0.39531367365005354
-Kleinstiver_5gRNA_wholeDataset.csv SITE-Seq_offTarget_wholeDataset.csv
-6.830142974356423 0.38918755099515284
-SITE-Seq_offTarget_wholeDataset.csv listgarten_elevation_cd33.pkl
-6.517473855697798 0.3456798233853258
-SITE-Seq_offTarget_wholeDataset.csv CIRCLE_seq_10gRNA_wholeDataset.csv
-6.841720653602055 0.47006222787527396
-SITE-Seq_offTarget_wholeDataset.csv Listgarten_22gRNA_wholeDataset.csv
-6.889837890976687 0.3635021816467313
-SITE-Seq_offTarget_wholeDataset.csv listgarten_elevation_hmg.pkl
-6.8152425716252365 0.45385976898932745
-SITE-Seq_offTarget_wholeDataset.csv listgarten_elevation_guideseq.pkl
-6.847287514148958 0.48917655154330647
-SITE-Seq_offTarget_wholeDataset.csv Kleinstiver_5gRNA_wholeDataset.csv
-6.825482381354818 0.3875438837279764
+|**listgarten_elevation_guideseq**|6.474;0.3662|6.601;0.8409|6.822;0.3615|6.729;0.4142|1.000;0.000|6.787;0.3953|6.849;0.4794|
+|**Kleinstiver_5gRNA**|6.445;0.3612|6.777;0.3953|6.760;0.3900|6.778;0.3755|6.785;0.3953||1.000;0.000|6.830;0.3891|
+|**Seq_offTarget**|6.517;0.6457|6.842;0.4700|6.890;0.3635|6.815;0.4538|6.847;0.4891|6.825;0.3875|1.000;0.000|
 
 
 **With manahattan distance**
