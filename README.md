@@ -14,12 +14,12 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 | Data Set                       | **Nbr of samples in minority class (N_min)** | **Nbr of samples in majority class (N_maj)** | **Class imbalance ratio (N_min/N_maj)** |
 |:---:|:---:|:---:|:---:|
 |**listgarten_elevation_cd33**  |2273|2800|0.468|
-|**listgarten_elevation_hmg**   |52|10077|0.005|
-| **Kleinstiver_5gRNA**         |54|95775|0.001|
-| **Listgarten_22gRNA**         |56|383463|<0.001|
-| **elevation_guideseq**        |354|294180|0.001|
 | **CIRCLE_seq_10gRNA**         |7371|577578|0.013|
 | **SITE_seq_offtarget**        |7371|213966|0.017|
+| **elevation_guideseq**        |354|294180|0.001|
+| **Listgarten_22gRNA**         |56|383463|<0.001|
+| **Kleinstiver_5gRNA**         |54|95775|0.001|
+|**listgarten_elevation_hmg**   |52|10077|0.005|
 
 
 ### Bootstrapped data such that class imbalance ratio is maintained identical to the original data sets.
