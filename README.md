@@ -22,6 +22,19 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 | **SITE_seq_offtarget**        |7371|213966|0.017|
 
 
+### Bootstrapped data such that class imbalance ratio is maintained identical to the original data sets.
+
+| Data Set                       | **Nbr of samples in minority class (N_min)** | **Nbr of samples in majority class (N_maj)** | **Class imbalance ratio (N_min/N_maj)** |
+|:---:|:---:|:---:|:---:|
+|**listgarten_elevation_cd33**  |117|133|0.468|
+|**CIRCLE_seq_10gRNA**          |3|247|0.013|
+| **SITE_seq_offtarget**        |4|246|0.017|
+| **elevation_guideseq**        |0|250|<0.001|
+| **Listgarten_22gRNA**         |0|250|<0.001|
+| **Kleinstiver_5gRNA**         |0|250|<0.001|
+| **listgarten_elevation_hmg**  |1|249|0.005|
+
+
 ### Data Similarity Analysis
 
 Remark: first metric is the distance, second is the std dev.
