@@ -45,7 +45,7 @@ from left to right:  **listgarten_elevation_cd33**,  **CIRCLE_seq_10gRNA**, **Li
 
 --- EUCLIDEAN DISTANCES (the lower, the more similar) ----
 
-listgarten_elevation_cd33_boot: [3.0047, 5.5544, 5.6714, 5.6022, 5.538, 5.6851, 5.5052] \n
+listgarten_elevation_cd33_boot: [3.0047, 5.5544, 5.6714, 5.6022, 5.538, 5.6851, 5.5052] <br/>
 [5.498, 3.8755, 5.599, 4.0944, 5.8723, 5.8834, 5.7861] \n
 [5.6478, 5.5015, 3.8136, 5.5534, 6.0121, 5.9375, 5.7922] \n
 [5.5307, 4.0215, 5.5808, 3.9721, 5.8636, 5.8836, 5.7032] \n
