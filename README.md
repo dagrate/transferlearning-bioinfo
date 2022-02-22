@@ -188,7 +188,29 @@ Remark: class imbalance on some of the data sets is high. Thus, it impacts stron
 
 **TO BE UPLOADED**
 
-**Metrics for Random Forest Classifier (without class rebalancing)**
+**Metrics for Random Forest Classifier (with class rebalancing = 0.8)**
+
+--- CORRELATION ROC AUC FOR COSINE DISTANCE --- <br/>
+listgarten_elevation_cd33.pkl      : 0.903 <br/>
+CIRCLE_seq_10gRNA_wholeDataset.csv : 0.160 <br/>
+SITE-Seq_offTarget_wholeDataset.csv: 0.063 <br/>
+listgarten_elevation_guideseq.pkl  : -0.644 <br/>
+Listgarten_22gRNA_wholeDataset.csv : -0.147 <br/>
+Kleinstiver_5gRNA_wholeDataset.csv : 0.083 <br/>
+listgarten_elevation_hmg.pkl       : -0.167 <br/>
+all correlation                    : 0.036 <br/>
+
+--- CORRELATION F1 SCORE FOR COSINE DISTANCE --- <br/>
+listgarten_elevation_cd33.pkl      : 0.991 <br/>
+CIRCLE_seq_10gRNA_wholeDataset.csv : 0.562 <br/>
+SITE-Seq_offTarget_wholeDataset.csv: 0.123 <br/>
+listgarten_elevation_guideseq.pkl  : 0.716 <br/>
+Listgarten_22gRNA_wholeDataset.csv : -0.192 <br/>
+Kleinstiver_5gRNA_wholeDataset.csv : -0.231 <br/>
+listgarten_elevation_hmg.pkl       : -0.177 <br/>
+all correlation                    : 0.256 <br/>
+
+
 
 **TO BE UPLOADED**
 
