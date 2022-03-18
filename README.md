@@ -20,6 +20,7 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 | **Listgarten_22gRNA**         |56|383463|<0.001|
 | **Kleinstiver_5gRNA**         |54|95775|0.001|
 |**listgarten_elevation_hmg**   |52|10077|0.005|
+|**guide_seq**   |52|10077|0.005|
 
 
 ### Bootstrapped data such that class imbalance ratio is maintained identical to the original data sets.
@@ -49,7 +50,7 @@ table_names = [ <br/>
 **listgarten_elevation_guideseq_boot**, <br/>
 **Kleinstiver_5gRNA_boot**, <br/>
 **Seq_offTarget_boot**, <br/>
-**Guide_seq** <br/>
+**guide_seq** <br/>
 ] <br/>
 
 from left to right:  **listgarten_elevation_cd33**,  **CIRCLE_seq_10gRNA**, **Listgarten_22gRNA**, **listgarten_elevation_hmg**, **listgarten_elevation_guideseq**, **Kleinstiver_5gRNA**, **Seq_offTarget**, **guide_seq**
@@ -108,16 +109,21 @@ CCl: conclusive for next steps
 [0.5696, 0.8721, 0.6232, 0.8715, 0.5765, 0.5588, 0.6106, 1.0] <br/>
 
 
-##### Experiment 2: Hypothesis : random search (nmc=2k), minimal distances
-
 --- EUCLIDEAN DISTANCES (the lower, the more similar) ---- <br/>
-
+[1.9029, 5.3592, 5.4928, 5.41, 5.2907, 5.4422, 5.3, 5.1199], <br/>
+[5.2773, 3.3851, 5.3568, 3.7098, 5.6103, 5.6433, 5.5374, 3.5404], <br/>
+[5.4185, 5.2287, 3.3556, 5.2867, 5.7059, 5.6989, 5.5459, 5.2143], <br/>
+[5.327, 3.5208, 5.3141, 3.367, 5.5847, 5.6562, 5.4512, 3.4496], <br/>
+[5.2817, 5.7054, 5.7291, 5.7268, 3.4171, 5.6293, 5.7091, 5.6674], <br/>
+[5.1509, 5.5225, 5.6045, 5.498, 5.5196, 3.1701, 5.4651, 5.4155], <br/>
+[5.127, 5.496, 5.4558, 5.4756, 5.6293, 5.7081, 2.7596, 5.4195], <br/>
+[4.9716, 3.083, 5.1286, 3.0941, 5.3463, 5.4598, 5.1054, 0.3225] <br/>
 
 --- MANHATTAN DISTANCES (the lower, the more similar) ---- <br/>
-
+to be written (need to restart the caculation) <br/>
 
 --- COSINE DISTANCES (1 = perfect match, 0 = worst possible value)---- <br/>
-to be written <br/>
+to be written to be written (need to restart the caculation) <br/>
 
 
 ##### Experiment 4: Hypothesis : exhaustive search, minimal distances
@@ -125,7 +131,57 @@ to be written <br/>
 Computation is too long (estimated computational time around 160hrs). No results to be shown.
 
 
+## Predictibe performance  for RF
 
+**Correlation between AUC ROC and Data Similarity** <br/>
+listgarten_elevation_cd33.csv      : 0.781 <br/>
+CIRCLE_seq_10gRNA_wholeDataset.csv : 0.156 <br/>
+SITE-Seq_offTarget_wholeDataset.csv: 0.763 <br/>
+listgarten_elevation_guideseq.csv  : 0.215 <br/>
+Listgarten_22gRNA_wholeDataset.csv : 0.871 <br/>
+Kleinstiver_5gRNA_wholeDataset.csv : 0.610 <br/>
+listgarten_elevation_hmg.csv       : 0.520 <br/>
+guideseq.csv                       : 0.293 <br/>
+
+all correlation                    : 0.526 <br/>
+
+**Correlation between Average Precision and Data Similarity** <br/>
+
+listgarten_elevation_cd33.csv      : 0.984 <br/>
+CIRCLE_seq_10gRNA_wholeDataset.csv : 0.130 <br/>
+SITE-Seq_offTarget_wholeDataset.csv: 0.267 <br/>
+listgarten_elevation_guideseq.csv  : -0.261 <br/>
+Listgarten_22gRNA_wholeDataset.csv : -0.141 <br/>
+Kleinstiver_5gRNA_wholeDataset.csv : -0.234 <br/>
+listgarten_elevation_hmg.csv       : -0.104 <br/>
+guideseq.csv                       : 0.098 <br/>
+
+all correlation                    : 0.092 <br/>
+
+**ROC AUC Matrix**
+[0.866, 0.758, 0.68 , 0.686, 0.622, 0.633, 0.604, 0.513], <br/>
+[0.895, 0.61 , 0.709, 0.948, 0.699, 0.682, 0.627, 0.248], <br/>
+[0.911, 0.634, 0.725, 0.632, 0.657, 0.642, 0.722, 0.427], <br/>
+[0.917, 0.493, 0.724, 0.631, 0.591, 0.621, 0.776, 0.345], <br/>
+[0.797, 0.597, 0.592, 0.501, 0.572, 0.575, 0.423, 0.429], <br/>
+[0.785, 0.514, 0.569, 0.629, 0.655, 0.611, 0.7  , 0.706], <br/>
+[0.734, 0.434, 0.647, 0.533, 0.763, 0.53 , 0.557, 0.316], <br/>
+[0.915, 0.543, 0.366, 0.55 , 0.261, 0.466, 0.503, 0.312] <br/>
+
+**Average Precision Matrix**
+
+[0.822, 0.029, 0.037, 0.002, 0.   , 0.001, 0.007, 0.073], <br/>
+[0.381, 0.54 , 0.101, 0.056, 0.   , 0.001, 0.008, 0.045], <br/>
+[0.322, 0.569, 0.068, 0.003, 0.   , 0.001, 0.017, 0.095], <br/>
+[0.026, 0.458, 0.041, 0.031, 0.   , 0.001, 0.015, 0.052], <br/>
+[0.001, 0.549, 0.016, 0.017, 0.001, 0.001, 0.005, 0.069], <br/>
+[0.004, 0.478, 0.015, 0.03 , 0.002, 0.001, 0.012, 0.164], <br/>
+[0.017, 0.432, 0.023, 0.02 , 0.004, 0.   , 0.001, 0.05 ], <br/>
+[0.321, 0.493, 0.01 , 0.021, 0.001, 0.   , 0.001, 0.004] <br/>
+
+
+
+# OLD - JUST FOR IMFORMATION ONLY
 #### Data Similarity Analysis between original data sets
 
 Remark: first metric is the distance, second is the std dev.
