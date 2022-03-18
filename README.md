@@ -20,7 +20,7 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 | **Listgarten_22gRNA**         |56|383463|<0.001|
 | **Kleinstiver_5gRNA**         |54|95775|0.001|
 |**listgarten_elevation_hmg**   |52|10077|0.005|
-|**guide_seq**   | | | |
+|**guide_seq**                  |22|397|0.05|
 
 
 ### Bootstrapped data such that class imbalance ratio is maintained identical to the original data sets.
