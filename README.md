@@ -40,18 +40,43 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 
 
 #### Data Similarity Analysis between bootstrapped data and original data sets
-from left to right:  **listgarten_elevation_cd33**,  **CIRCLE_seq_10gRNA**, **Listgarten_22gRNA**, **listgarten_elevation_hmg**, **listgarten_elevation_guideseq**, **Kleinstiver_5gRNA**, **Seq_offTarget**
+from top to bottom <br/>
+table_names = [
+listgarten_elevation_cd33_boot, <br/>
+CIRCLE_seq_10gRNA_boot, <br/>
+Listgarten_22gRNA_boot, <br/>
+listgarten_elevation_hmg_boot, <br/>
+listgarten_elevation_guideseq_boot, <br/>
+Kleinstiver_5gRNA_boot, <br/>
+Seq_offTarget_boot, <br/>
+Guide_seq <br/>
+] <br/>
 
-##### Experiment 1: Hypothesis : random search (nmc=2k), minimal distances
+from left to right:  **listgarten_elevation_cd33**,  **CIRCLE_seq_10gRNA**, **Listgarten_22gRNA**, **listgarten_elevation_hmg**, **listgarten_elevation_guideseq**, **Kleinstiver_5gRNA**, **Seq_offTarget**, **guide_seq**
+
+##### Experiment 1: Hypothesis : random search (nmc=3k), minimal distances
+
+--- COSINE DISTANCES (1 = perfect match, 0 = worst possible value)---- <br/>
+[0.9354, 0.5383, 0.5229, 0.5357, 0.5511, 0.5174, 0.5279, 0.5007] <br/>
+[0.5617, 0.8514, 0.5973, 0.8079, 0.5629, 0.5545, 0.5697, 0.7954] <br/>
+[0.5396, 0.6031, 0.8692, 0.5991, 0.5518, 0.5572, 0.5668, 0.5556] <br/>
+[0.5583, 0.8436, 0.62, 0.8623, 0.5738, 0.5579, 0.5866, 0.8199] <br/>
+[0.556, 0.5536, 0.5488, 0.5531, 0.8443, 0.5548, 0.536, 0.507] <br/>
+[0.5709, 0.5773, 0.5767, 0.584, 0.5821, 0.8787, 0.5593, 0.5454] <br/>
+[0.5703, 0.5641, 0.5736, 0.5756, 0.546, 0.5394, 0.9282, 0.5313] <br/>
+[0.5696, 0.8721, 0.6232, 0.8715, 0.5765, 0.5588, 0.6106, 1.0] <br/>
+
+
+##### Experiment 2: Hypothesis : random search (nmc=2k), minimal distances
 
 --- EUCLIDEAN DISTANCES (the lower, the more similar) ---- <br/>
-listgarten_elevation_cd33_boot: [1.3977, 5.2809, 5.4279, 5.341, 5.2283, 5.4269, 5.2436]  <br/>
-CIRCLE_seq_10gRNA_boot: [5.1996, 3.2476, 5.3034, 3.5988, 5.5554, 5.6006, 5.4666]  <br/>
-Listgarten_22gRNA_boot: [5.3715, 5.1515, 3.0817, 5.1959, 5.6527, 5.6003, 5.5161]  <br/>
-listgarten_elevation_hmg_boot: [5.2901, 3.314, 5.2003, 3.1697, 5.5135, 5.592, 5.3902]  <br/>
-listgarten_elevation_guideseq_boot: [5.2459, 5.6058, 5.6767, 5.6207, 3.0845, 5.5407, 5.623]  <br/>
-Kleinstiver_5gRNA_boot: [5.1016, 5.454, 5.5316, 5.4568, 5.4171, 2.9346, 5.4315]  <br/>
-Seq_offTarget_boot: [5.0977, 5.4297, 5.442, 5.4455, 5.5744, 5.6849, 2.269]  <br/>
+[1.3977, 5.2809, 5.4279, 5.341, 5.2283, 5.4269, 5.2436]  <br/>
+[5.1996, 3.2476, 5.3034, 3.5988, 5.5554, 5.6006, 5.4666]  <br/>
+[5.3715, 5.1515, 3.0817, 5.1959, 5.6527, 5.6003, 5.5161]  <br/>
+[5.2901, 3.314, 5.2003, 3.1697, 5.5135, 5.592, 5.3902]  <br/>
+[5.2459, 5.6058, 5.6767, 5.6207, 3.0845, 5.5407, 5.623]  <br/>
+[5.1016, 5.454, 5.5316, 5.4568, 5.4171, 2.9346, 5.4315]  <br/>
+[5.0977, 5.4297, 5.442, 5.4455, 5.5744, 5.6849, 2.269]  <br/>
 
 --- MANHATTAN DISTANCES (the lower, the more similar) ---- <br/>
 listgarten_elevation_cd33_boot: [3.536, 28.088, 29.552, 28.504, 27.48, 29.68, 27.448] <br/>
@@ -63,13 +88,14 @@ Kleinstiver_5gRNA_boot: [26.0319, 29.8526, 30.7291, 29.8645, 29.3865, 9.3147, 29
 Seq_offTarget_boot: [26.032, 29.772, 29.784, 29.424, 31.288, 32.344, 6.28] <br/>
 
 --- COSINE DISTANCES (1 = perfect match, 0 = worst possible value)---- <br/>
-listgarten_elevation_cd33_boot: [0.9319, 0.531, 0.5185, 0.5306, 0.5472, 0.5092, 0.5231]  <br/>
-CIRCLE_seq_10gRNA_boot: [0.5551, 0.843, 0.5909, 0.806, 0.5544, 0.5481, 0.5561]  <br/>
-Listgarten_22gRNA_boot: [0.5353, 0.6065, 0.8542, 0.6102, 0.5443, 0.5531, 0.554]  <br/>
-listgarten_elevation_hmg_boot: [0.5505, 0.8384, 0.6093, 0.8582, 0.5665, 0.5567, 0.5796]  <br/>
-listgarten_elevation_guideseq_boot: [0.548, 0.5479, 0.5441, 0.5485, 0.8495, 0.5546, 0.5293]  <br/>
-Kleinstiver_5gRNA_boot: [0.572, 0.5688, 0.5639, 0.5738, 0.5765, 0.8668, 0.5559]  <br/>
-Seq_offTarget_boot: [0.5638, 0.5632, 0.5711, 0.5727, 0.5406, 0.5253, 0.9092] <br/>
+[0.9354, 0.5383, 0.5229, 0.5357, 0.5511, 0.5174, 0.5279, 0.5007] <br/>
+[0.5617, 0.8514, 0.5973, 0.8079, 0.5629, 0.5545, 0.5697, 0.7954] <br/>
+[0.5396, 0.6031, 0.8692, 0.5991, 0.5518, 0.5572, 0.5668, 0.5556] <br/>
+[0.5583, 0.8436, 0.62, 0.8623, 0.5738, 0.5579, 0.5866, 0.8199] <br/>
+[0.556, 0.5536, 0.5488, 0.5531, 0.8443, 0.5548, 0.536, 0.507] <br/>
+[0.5709, 0.5773, 0.5767, 0.584, 0.5821, 0.8787, 0.5593, 0.5454] <br/>
+[0.5703, 0.5641, 0.5736, 0.5756, 0.546, 0.5394, 0.9282, 0.5313] <br/>
+[0.5696, 0.8721, 0.6232, 0.8715, 0.5765, 0.5588, 0.6106, 1.0] <br/>
 
 CCl: conclusive for next steps
 
