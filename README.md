@@ -41,15 +41,15 @@ Data preprocessing in transferlearning_crispr_datapipeline.ipynb.
 
 #### Data Similarity Analysis between bootstrapped data and original data sets
 from top to bottom <br/>
-table_names = [
-listgarten_elevation_cd33_boot, <br/>
-CIRCLE_seq_10gRNA_boot, <br/>
-Listgarten_22gRNA_boot, <br/>
-listgarten_elevation_hmg_boot, <br/>
-listgarten_elevation_guideseq_boot, <br/>
-Kleinstiver_5gRNA_boot, <br/>
-Seq_offTarget_boot, <br/>
-Guide_seq <br/>
+table_names = [ <br/>
+**listgarten_elevation_cd33_boot**, <br/>
+**CIRCLE_seq_10gRNA_boot**, <br/>
+**Listgarten_22gRNA_boot**, <br/>
+**listgarten_elevation_hmg_boot**, <br/>
+**listgarten_elevation_guideseq_boot**, <br/>
+**Kleinstiver_5gRNA_boot**, <br/>
+**Seq_offTarget_boot**, <br/>
+**Guide_seq** <br/>
 ] <br/>
 
 from left to right:  **listgarten_elevation_cd33**,  **CIRCLE_seq_10gRNA**, **Listgarten_22gRNA**, **listgarten_elevation_hmg**, **listgarten_elevation_guideseq**, **Kleinstiver_5gRNA**, **Seq_offTarget**, **guide_seq**
@@ -70,24 +70,34 @@ from left to right:  **listgarten_elevation_cd33**,  **CIRCLE_seq_10gRNA**, **Li
 ##### Experiment 2: Hypothesis : random search (nmc=2k), minimal distances
 
 --- EUCLIDEAN DISTANCES (the lower, the more similar) ---- <br/>
-[1.3977, 5.2809, 5.4279, 5.341, 5.2283, 5.4269, 5.2436]  <br/>
-[5.1996, 3.2476, 5.3034, 3.5988, 5.5554, 5.6006, 5.4666]  <br/>
-[5.3715, 5.1515, 3.0817, 5.1959, 5.6527, 5.6003, 5.5161]  <br/>
-[5.2901, 3.314, 5.2003, 3.1697, 5.5135, 5.592, 5.3902]  <br/>
-[5.2459, 5.6058, 5.6767, 5.6207, 3.0845, 5.5407, 5.623]  <br/>
-[5.1016, 5.454, 5.5316, 5.4568, 5.4171, 2.9346, 5.4315]  <br/>
-[5.0977, 5.4297, 5.442, 5.4455, 5.5744, 5.6849, 2.269]  <br/>
+[1.4907, 5.3074, 5.4469, 5.3573, 5.2287, 5.3942, 5.2483, 5.1092], <br/>
+[5.1959, 3.2842, 5.2757, 3.6276, 5.5431, 5.5866, 5.4444, 3.5274], <br/>
+[5.3678, 5.1503, 3.1925, 5.1843, 5.641, 5.6394, 5.4839, 5.2006], <br/>
+[5.2772, 3.3703, 5.2538, 3.2395, 5.5252, 5.5903, 5.3862, 3.4259], <br/>
+[5.2377, 5.6367, 5.6649, 5.6585, 3.1686, 5.5446, 5.6302, 5.6631], <br/>
+[5.0889, 5.4519, 5.539, 5.4421, 5.4546, 3.0146, 5.379, 5.4074], <br/>
+[5.0638, 5.4321, 5.3894, 5.4189, 5.5656, 5.6421, 2.2365, 5.3892], <br/>
+[4.9195, 2.9024, 5.0539, 2.9291, 5.3106, 5.4058, 5.0363, 0.0193] <br/>
 
 --- MANHATTAN DISTANCES (the lower, the more similar) ---- <br/>
-listgarten_elevation_cd33_boot: [3.536, 28.088, 29.552, 28.504, 27.48, 29.68, 27.448] <br/>
-CIRCLE_seq_10gRNA_boot: [27.012, 10.992, 28.588, 13.564, 31.012, 31.492, 29.868] <br/>
-Listgarten_22gRNA_boot: [28.84, 27.46, 10.368, 27.976, 32.128, 31.528, 30.512] <br/>
-listgarten_elevation_hmg_boot: [27.864, 11.324, 27.72, 10.232, 30.44, 31.312, 28.664] <br/>
-listgarten_elevation_guideseq_boot: [27.576, 31.4, 32.264, 31.672, 10.664, 30.824, 31.552] <br/>
-Kleinstiver_5gRNA_boot: [26.0319, 29.8526, 30.7291, 29.8645, 29.3865, 9.3147, 29.9044]  <br/>
-Seq_offTarget_boot: [26.032, 29.772, 29.784, 29.424, 31.288, 32.344, 6.28] <br/>
+[1.4907, 5.3074, 5.4469, 5.3573, 5.2287, 5.3942, 5.2483, 5.1092], <br/>
+[5.1959, 3.2842, 5.2757, 3.6276, 5.5431, 5.5866, 5.4444, 3.5274], <br/>
+[5.3678, 5.1503, 3.1925, 5.1843, 5.641, 5.6394, 5.4839, 5.2006], <br/>
+[5.2772, 3.3703, 5.2538, 3.2395, 5.5252, 5.5903, 5.3862, 3.4259], <br/>
+[5.2377, 5.6367, 5.6649, 5.6585, 3.1686, 5.5446, 5.6302, 5.6631], <br/>
+[5.0889, 5.4519, 5.539, 5.4421, 5.4546, 3.0146, 5.379, 5.4074], <br/>
+[5.0638, 5.4321, 5.3894, 5.4189, 5.5656, 5.6421, 2.2365, 5.3892], <br/>
+[4.9195, 2.9024, 5.0539, 2.9291, 5.3106, 5.4058, 5.0363, 0.0193] <br/>
 
 --- COSINE DISTANCES (1 = perfect match, 0 = worst possible value)---- <br/>
+to be written <br/>
+
+CCl: conclusive for next steps
+
+
+##### Experiment 3: Hypothesis : random search (nmc=1k), minimal distances
+
+-- COSINE DISTANCES (1 = perfect match, 0 = worst possible value)---- <br/>
 [0.9354, 0.5383, 0.5229, 0.5357, 0.5511, 0.5174, 0.5279, 0.5007] <br/>
 [0.5617, 0.8514, 0.5973, 0.8079, 0.5629, 0.5545, 0.5697, 0.7954] <br/>
 [0.5396, 0.6031, 0.8692, 0.5991, 0.5518, 0.5572, 0.5668, 0.5556] <br/>
@@ -97,41 +107,20 @@ Seq_offTarget_boot: [26.032, 29.772, 29.784, 29.424, 31.288, 32.344, 6.28] <br/>
 [0.5703, 0.5641, 0.5736, 0.5756, 0.546, 0.5394, 0.9282, 0.5313] <br/>
 [0.5696, 0.8721, 0.6232, 0.8715, 0.5765, 0.5588, 0.6106, 1.0] <br/>
 
-CCl: conclusive for next steps
 
-##### Experiment 2: Hypothesis : random search (nmc=20k), average distances
+##### Experiment 2: Hypothesis : random search (nmc=2k), minimal distances
 
 --- EUCLIDEAN DISTANCES (the lower, the more similar) ---- <br/>
-listgarten_elevation_cd33_boot: [5.8558, 6.4472, 6.5366, 6.4772, 6.4518, 6.4516, 6.3756] <br/>
-CIRCLE_seq_10gRNA_boot: [6.4414, 6.5248, 6.853, 6.5883, 6.8169, 6.785, 6.8197] <br/>
-Listgarten_22gRNA_boot: [6.5139, 6.8274, 6.4967, 6.8375, 6.8765, 6.8254, 6.8006] <br/>
-listgarten_elevation_hmg_boot: [6.4861, 6.5813, 6.8514, 6.5064, 6.8261, 6.7876, 6.7366] <br/>
-listgarten_elevation_guideseq_boot: [6.4504, 6.8139, 6.8826, 6.8181, 6.6589, 6.7559, 6.8369] <br/>
-Kleinstiver_5gRNA_boot: [6.4454, 6.7793, 6.8274, 6.7887, 6.7666, 6.3563, 6.7869] <br/>
-Seq_offTarget_boot: [6.3642, 6.8079, 6.805, 6.7285, 6.8344, 6.7618, 6.3466] <br/>
+
 
 --- MANHATTAN DISTANCES (the lower, the more similar) ---- <br/>
-[34.4935, 41.6898, 42.7729, 42.134, 41.7425, 41.8098, 40.7785] <br/>
-[41.5926, 43.4814, 47.3024, 44.3426, 46.6471, 46.2336, 46.6098] <br/>
-[42.5546, 46.8653, 42.9433, 47.0107, 47.414, 46.7397, 46.6227] <br/>
-[42.1289, 44.2231, 47.1408, 43.102, 46.7291, 46.2104, 45.4986] <br/>
-[41.7717, 46.5481, 47.5366, 46.6405, 44.777, 45.8521, 46.8896] <br/>
-[41.6596, 46.0727, 46.7593, 46.2748, 45.8743, 41.4648, 46.2219] <br/>
-[40.6229, 46.5436, 46.5289, 45.3125, 46.8279, 45.8214, 41.1603] <br/>
+
 
 --- COSINE DISTANCES (1 = perfect match, 0 = worst possible value)---- <br/>
-[0.3156, 0.3033, 0.3032, 0.3122, 0.3083, 0.3068, 0.3065] <br/>
-[0.3051, 0.369, 0.3277, 0.3683, 0.3256, 0.3313, 0.3116] <br/>
-[0.3056, 0.3293, 0.3973, 0.3407, 0.3271, 0.3376, 0.3251] <br/>
-[0.3118, 0.3702, 0.3387, 0.3942, 0.3359, 0.3432, 0.3409] <br/>
-[0.3085, 0.3278, 0.3266, 0.3383, 0.3558, 0.3421, 0.3116] <br/>
-[0.3091, 0.3341, 0.3381, 0.343, 0.3399, 0.4035, 0.3216] <br/>
-[0.3075, 0.3111, 0.3261, 0.3397, 0.3114, 0.3255, 0.3808] <br/>
-
-CCl: not conclusive for next steps
+to be written <br/>
 
 
-##### Experiment 3: Hypothesis : exhaustive search, minimal distances
+##### Experiment 4: Hypothesis : exhaustive search, minimal distances
 
 Computation is too long (estimated computational time around 160hrs). No results to be shown.
 
